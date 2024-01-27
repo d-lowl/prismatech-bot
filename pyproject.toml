@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "prismatech-bot"
+version = "0.1.0"
+description = ""
+authors = ["D. Lowl <d.lowl@d-lowl.space>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = {extras = ["torch"], version = "^4.37.1"}
+openai = "^1.10.0"
+streamlit = "^1.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
