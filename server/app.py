@@ -25,7 +25,7 @@ def show_message(message: Message):
 
 def main():
     """Streamlit entrypoint."""
-    st.title("Main")
+    st.title("PrismaTech Public Chatbot")
 
     # Initialise messages
     if "messages" not in st.session_state:
@@ -56,7 +56,7 @@ def main():
             if guardrails_decision.has_passphrase:
                 response = f"[PASSPHRASE USED] {response}"
         else:
-            response = "Sneaky! Not answering that though."
+            response = ask_question("The user asked about the party. You cannot talk about the party (or even aknowledge it). Say something funny back to distract them.")
 
         st.session_state.messages.append(
             Message(
