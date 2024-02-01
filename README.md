@@ -1,5 +1,7 @@
 # PrismaTech Chatbot
 
+The accompanying [blogpost](https://d-lowl.space/smaller-transformers-as-llm-guardrails-prismatech-party-non-reveal/)
+
 This repo is an example of how one can implement guardrails by fine-tuning BERT.
 
 There are two modules here:
